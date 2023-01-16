@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+            <link rel="stylesheet" href="style.css">
+
+            <link rel="shortcut icon" href="./img/calculator-solid.svg" type="image/x-icon">
+            <title> Tip Calculator </title>
+        </head>
+
+        <body>
+            <div id="wrapper">
+                <div id="form-card" class="card d-block">
+                    <h1 class="bg-blue white"> Tip calculator </h1>
+    
+                    <div id="card-body">
+                        <label for="bill" class="fs-20"> Type your bill. </label>
+                        <div>
+                            <i class="fa-solid fa-money-check-dollar fa-2x white bg-blue"></i>
+                            <input type="number" id="bill" step="0.01" class="fs-20">
+                        </div>
+        
+                        <label for="people" class="fs-20"> Type the number of people sharing the bill. </label>
+                        <div>
+                            <i class="fa-solid fa-user-group fa-2x white bg-blue"></i>
+                            <input type="number" id="people" step="1" class="fs-20">
+                        </div>
+        
+                        <label for="service" class="fs-20"> Select the service. </label>
+                        <select id="service" class="fs-20">
+                            <option class="fs-20"> Great - 20% </option>
+                            <option class="fs-20"> Good - 10% </option>
+                            <option class="fs-20"> Bad - 2% </option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="bg-blue white fs-20"> Calculate </button>
+
+
+
+                <div id="outcome-card" class="fs-24 d-none card">
+                    <h1 class="bg-blue white"> Tip calculator </h1>
+
+                    <div> 
+                        <span> Your Tip: </span> 
+                        <span></span>
+                    </div>
+
+                    <div> 
+                        <span> The number of people: </span> 
+                        <span></span>
+                    </div>
+
+                    <div> 
+                        <span> Service type: </span> 
+                        <span></span>
+                    </div>
+
+
+                    <div id="tip" class="light-gray"> 
+                        <span>Tip Amount: </span> 
+                        <span></span>
+                    </div>
+
+                    <div id="total" class="light-gray"> 
+                        <span> Total Amount: </span> 
+                        <span> &dollar; </span>
+                    </div>
+
+                    <div id="for-eachPerson" class="light-gray"> 
+                        <span> Each Person Owes: </span>
+                        <span> &dollar; </span>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./main.js"></script>
+        </body>
+    </html>
